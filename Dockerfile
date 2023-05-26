@@ -26,15 +26,15 @@ RUN dnf install -y geany git code falkon dotnet-sdk-7.0 nodejs gnome-system-moni
       rm -rf /var/cache/dnf/*
 
 # add vscode icon to quicklaunch
-RUN echo 'apps\3\desktop=/usr/share/applications/code.desktop' >> ${HOME}/.config/lxqt/panel.conf
-RUN sed -i 's/code --unity/code --no-sandbox --unity/' /usr/share/applications/code.desktop
+#RUN echo 'apps\3\desktop=/usr/share/applications/code.desktop' >> ${HOME}/.config/lxqt/panel.conf
+#RUN sed -i 's/code --unity/code --no-sandbox --unity/' /usr/share/applications/code.desktop
 
-USER headless
+#USER headless
 
-RUN code --install-extension ms-vscode.vscode-typescript-tslint-plugin && \
-    code --install-extension dbaeumer.vscode-eslint && \
-    code --install-extension mrmlnc.vscode-scss && \
-    code --install-extension visualstudioexptteam.vscodeintellicode && \
-    code --install-extension ms-dotnettools.csharp && \
-    code --install-extension mrmlnc.vscode-remark && \
-    code --install-extension eamodio.gitlens
+#RUN code --install-extension ms-vscode.vscode-typescript-tslint-plugin && \
+   # code --install-extension dbaeumer.vscode-eslint && \
+   # code --install-extension mrmlnc.vscode-scss && \
+  #  code --install-extension visualstudioexptteam.vscodeintellicode && \
+ #   code --install-extension ms-dotnettools.csharp && \
+ #   code --install-extension mrmlnc.vscode-remark && \
+#    code --install-extension eamodio.gitlens
