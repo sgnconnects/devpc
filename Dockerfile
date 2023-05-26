@@ -6,8 +6,8 @@ RUN apt update && \
 
 
 # All Dependencies Satisfied
-COPY root /
-ENV PAGE_TITLE=Firefox
+#COPY root /
+#ENV PAGE_TITLE=Firefox
 
 
 # Cleanup
