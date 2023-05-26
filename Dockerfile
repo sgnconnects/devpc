@@ -1,15 +1,18 @@
 
-FROM labeg/centos-lxqt-vnc:37
 
-LABEL maintainer="labeg@mail.ru" \
-      io.k8s.description="Container with tools for development C# and Typescript applications" \
-      io.k8s.display-name="Container with C# ant Typescript" \
-      io.openshift.expose-services="5901:xvnc" \
-      io.openshift.tags="c#, typescript, vnc, centos, lxqt" \
-      io.openshift.non-scalable=true
 
-EXPOSE 80 5901 443 8080
-USER root
+
+#FROM labeg/centos-lxqt-vnc:37
+
+#LABEL maintainer="labeg@mail.ru" \
+   #   io.k8s.description="Container with tools for development C# and Typescript applications" \
+#      io.k8s.display-name="Container with C# ant Typescript" \
+#      io.openshift.expose-services="5901:xvnc" \
+#      io.openshift.tags="c#, typescript, vnc, centos, lxqt" \
+#      io.openshift.non-scalable=true
+#
+##EXPOSE 80 5901 443 8080
+#USER root
 
 
 # dotnet vscode nodejs
