@@ -8,7 +8,7 @@ LABEL maintainer="labeg@mail.ru" \
       io.openshift.tags="c#, typescript, vnc, centos, lxqt" \
       io.openshift.non-scalable=true
 
-EXPOSE 80
+EXPOSE 80 5901 443 8080
 USER root
 
 
