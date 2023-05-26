@@ -11,8 +11,9 @@ ENV PAGE_TITLE=Firefox
 
 
 # Cleanup
-RUN apt clean
 
+RUN apt clean
+EXPOSE 443
 
 #FROM labeg/centos-lxqt-vnc:37
 
