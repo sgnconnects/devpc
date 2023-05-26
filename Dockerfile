@@ -3,22 +3,19 @@
 
 FROM labeg/centos-lxqt-vnc:37
 
-# set version label
-ARG BUILD_DATE
-ARG KASM_VERSION
-ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="thelamer"
 
 
+#LABEL maintainer="labeg@mail.ru" \
 
-#Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
-ENV NVIDIA_DRIVER_CAPABILITIES="compute,graphics,video,utility" \
-    VERSION="develop"
+     io.k8s.description="Container with tools for development C# and Typescript applications" \
 
-#
-  
-    
+     io.k8s.display-name="Container with C# ant Typescript" \
+
+     io.openshift.expose-services="443:xvnc" \
+
+      io.openshift.tags="c#, typescript, vnc, centos, lxqt" \
+
+     io.openshift.non-scalable=true
     
 
 
