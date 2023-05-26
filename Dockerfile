@@ -8,7 +8,9 @@ LABEL maintainer="labeg@mail.ru" \
       io.openshift.tags="c#, typescript, vnc, centos, lxqt" \
       io.openshift.non-scalable=true
 
+EXPOSE 3000
 USER root
+
 
 # dotnet vscode nodejs
 #RUN sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
